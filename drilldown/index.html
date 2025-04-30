@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drilldown Highcharts Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+  </head>
+  <body>
+    <div id="breadcrumbs" class="breadcrumbs"></div>
+    <button id="backBtn" class="back-btn" style="display: none">Back</button>
+    <div id="container" class="chart-container"></div>
+    <script>
+      // Provide $parameters for drill.js
+      window.$parameters = {
+        containerId: "container",
+        breadcrumbsId: "breadcrumbs",
+        backId: "backBtn",
+      };
+    </script>
+    <script src="drill.js"></script>
+  </body>
+</html>

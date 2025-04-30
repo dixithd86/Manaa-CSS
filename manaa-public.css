@@ -2268,3 +2268,17 @@ a.news-details-list-item .image-container {
   font-weight: 500;
   padding: 10px;
 }
+
+.pd-body {
+  display: grid;
+  gap: 15px;
+}
+.pd-body > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pd-body > div label {
+  font-size: 15px;
+}
